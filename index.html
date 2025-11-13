@@ -12,13 +12,14 @@
       width: 100vw;
       height: 100vh;
       overflow: hidden;
-      background: #000; /* fallback in case image does not load */
+      background: #000;
     }
     body {
       width: 100vw;
       height: 100vh;
+      position: relative;
     }
-    img {
+    .background-img {
       width: 100vw;
       height: 100vh;
       object-fit: cover;
@@ -26,10 +27,25 @@
       margin: 0;
       padding: 0;
       border: none;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 0;
+    }
+    .red-arrow {
+      position: absolute;
+      left: 50%;
+      bottom: 25px; /* Adjust distance from bottom */
+      transform: translateX(-50%);
+      width: 60px;   /* Adjust size as needed */
+      height: auto;
+      z-index: 2;
+      pointer-events: none; /* So clicks pass through */
     }
   </style>
 </head>
 <body>
-  <img src="la.png" alt="LA image">
+  <img src="la.png" alt="LA image" class="background-img">
+  <img src="red-arrow-png-10.png" alt="Red Arrow" class="red-arrow">
 </body>
 </html>
