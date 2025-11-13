@@ -36,21 +36,24 @@
       position: fixed;
       top: 50%;
       left: 50%;
-      /* Center, then nudge further up and right (now 40px each) */
-      transform: translate(-50%, -50%) translate(40px, -40px);
+      /* Move UP 1in (-96px) and RIGHT 1in (+96px) from center */
+      transform: translate(calc(-50% + 96px), calc(-50% - 96px));
       z-index: 9999;
       width: 80px;
       height: auto;
-      pointer-events: none;
+      /* Remove pointer-events:none; so it's clickable */
       display: block;
       box-shadow: none;
       filter: none;
       background: none;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
   <img src="nh.png" alt="Suburb Image" class="suburbs-img" />
-  <img src="red-arrow-png-10.png" alt="Red Arrow" class="center-arrow" />
+  <a href="houses.html">
+    <img src="red-arrow-png-10.png" alt="Red Arrow" class="center-arrow" />
+  </a>
 </body>
 </html>
