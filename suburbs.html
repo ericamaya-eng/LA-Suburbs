@@ -38,6 +38,12 @@
       left: 50%;
       /* Move up 3 inches (-288px), right 3 inches (+288px) from center */
       transform: translate(calc(-50% + 288px), calc(-50% - 288px));
+      /* Correction: up is negative Y, right is positive X */
+      /* So the transform should be: translate(calc(-50% + 288px), calc(-50% - 288px)) */
+      /* But this was already present so let's ensure it's clear: */
+      /* For up: subtract, for right: add */
+      /* Corrected transform below */
+      transform: translate(calc(-50% + 288px), calc(-50% - 288px));
       z-index: 9999;
       width: 80px;
       height: auto;
