@@ -66,6 +66,8 @@
       filter: none;
       display: block;
       pointer-events: auto;
+      /* Flip on x axis (horizontal axis = vertical mirror) */
+      transform: scaleX(-1);
     }
   </style>
 </head>
@@ -89,7 +91,7 @@
       <img src="red-arrow-png-10.png" alt="Red Arrow" class="center-arrow" />
     </a>
   </div>
-  <!-- New arrow in the bottom right corner (no link by default) -->
+  <!-- New arrow in the bottom right corner, flipped horizontally -->
   <img src="red-arrow-png-10.png" alt="Corner Red Arrow" class="corner-arrow" />
 </body>
 </html>
