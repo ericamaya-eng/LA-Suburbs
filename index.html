@@ -6,7 +6,13 @@
   <title>City</title>
   <style>
     html, body { height: 100%; margin: 0; }
-    body { display: flex; align-items: center; justify-content: center; background: #f5f5f5; }
+    body { 
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      background: #f5f5f5; 
+      min-height: 100vh;
+    }
     .hero img {
       max-width: 90%;
       max-height: 90vh;
@@ -22,8 +28,8 @@
   </style>
 </head>
 <body>
-  <div class="hero">
-    <img src="la.png" alt="LA image">
-  </div>
+  <main class="hero" aria-label="Main image">
+    <img src="la.png" alt="Cityscape of Los Angeles at sunset">
+  </main>
 </body>
 </html>
