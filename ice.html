@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Houses</title>
+  <title>Ice Cream Truck</title>
   <style>
     html, body {
       height: 100%;
@@ -19,7 +19,7 @@
       height: 100vh;
       position: relative;
     }
-    .houses-img {
+    .icecreamtruck-img {
       width: 100vw;
       height: 100vh;
       object-fit: cover;
@@ -32,68 +32,9 @@
       top: 0;
       z-index: 0;
     }
-    .arrow-row {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      position: fixed;
-      top: 50%;
-      left: 0;
-      width: 100vw;
-      transform: translateY(-50%);
-      z-index: 9999;
-    }
-    .center-arrow {
-      width: 80px;
-      height: auto;
-      display: block;
-      background: none;
-      box-shadow: none;
-      filter: none;
-      pointer-events: auto;
-      cursor: pointer;
-    }
-    .corner-arrow {
-      position: fixed;
-      bottom: 40px;
-      right: 40px;
-      width: 80px;
-      height: auto;
-      z-index: 10000;
-      cursor: pointer;
-      background: none;
-      box-shadow: none;
-      filter: none;
-      display: block;
-      pointer-events: auto;
-      /* Flip on x axis (horizontal axis = vertical mirror) */
-      transform: scaleX(-1);
-    }
   </style>
 </head>
 <body>
-  <img src="houses.png" alt="Houses Image" class="houses-img" />
-  <div class="arrow-row">
-    <!-- Far left arrow links to houseinside1.html -->
-    <a href="houseinside1.html" style="display:block;">
-      <img src="red-arrow-png-10.png" alt="Red Arrow" class="center-arrow" />
-    </a>
-    <!-- Second arrow links to houseinside2.html -->
-    <a href="houseinside2.html" style="display:block;">
-      <img src="red-arrow-png-10.png" alt="Red Arrow" class="center-arrow" />
-    </a>
-    <!-- Third arrow links to houseinside3.html -->
-    <a href="houseinside3.html" style="display:block;">
-      <img src="red-arrow-png-10.png" alt="Red Arrow" class="center-arrow" />
-    </a>
-    <!-- Fourth (far right) arrow links to houseinside4.html -->
-    <a href="houseinside4.html" style="display:block;">
-      <img src="red-arrow-png-10.png" alt="Red Arrow" class="center-arrow" />
-    </a>
-  </div>
-  <!-- Bottom right corner arrow links to ice.html and is flipped -->
-  <a href="ice.html">
-    <img src="red-arrow-png-10.png" alt="Corner Red Arrow" class="corner-arrow" />
-  </a>
+  <img src="icecreamtruck.png" alt="Ice Cream Truck Image" class="icecreamtruck-img" />
 </body>
 </html>
