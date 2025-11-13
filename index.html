@@ -32,20 +32,29 @@
       top: 0;
       z-index: 0;
     }
-    .red-arrow {
+    .red-arrow-link {
       position: absolute;
       left: 50%;
-      bottom: 25px; /* Adjust distance from bottom */
+      bottom: 25px;
       transform: translateX(-50%);
-      width: 60px;   /* Adjust size as needed */
-      height: auto;
       z-index: 2;
-      pointer-events: none; /* So clicks pass through */
+      display: block;
+      width: 60px;
+      height: auto;
+    }
+    .red-arrow-link img {
+      width: 100%;
+      height: auto;
+      display: block;
+      pointer-events: auto;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
-  <img src="la.png" alt="LA image" class="background-img">
-  <img src="red-arrow-png-10.png" alt="Red Arrow" class="red-arrow">
+  <img src="la.png" alt="LA image" class="background-img" />
+  <a href="suburbs.html" class="red-arrow-link">
+    <img src="red-arrow-png-10.png" alt="Red Arrow" />
+  </a>
 </body>
 </html>
