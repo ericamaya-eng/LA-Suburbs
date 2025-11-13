@@ -6,7 +6,6 @@
   <title>Ice Cream Truck</title>
   <style>
     html, body {
-      height: 100%;
       margin: 0;
       padding: 0;
       width: 100vw;
@@ -17,24 +16,41 @@
     body {
       width: 100vw;
       height: 100vh;
+      margin: 0;
+      padding: 0;
       position: relative;
     }
     .icecreamtruck-img {
+      position: absolute;
+      left: 0; top: 0;
       width: 100vw;
       height: 100vh;
       object-fit: cover;
-      display: block;
+      z-index: 0;
       margin: 0;
       padding: 0;
       border: none;
+    }
+    .center-arrow {
       position: absolute;
-      left: 0;
-      top: 0;
-      z-index: 0;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80px; height: auto;
+      z-index: 1;
+      display: block;
+      background: none;
+      box-shadow: none;
+      filter: none;
+      pointer-events: auto;
+      cursor: pointer;
+      margin: 0;
+      padding: 0;
+      border: none;
     }
   </style>
 </head>
 <body>
-  <img src="icecream truck.png" alt="Ice Cream Truck Image" class="icecreamtruck-img" />
+  <img src="icecream truck.png" alt="Ice Cream Truck Image" class="icecreamtruck-img">
+  <img src="red-arrow-png-10.png" alt="Red Arrow" class="center-arrow">
 </body>
 </html>
