@@ -53,6 +53,20 @@
       pointer-events: auto;
       cursor: pointer;
     }
+    .corner-arrow {
+      position: fixed;
+      bottom: 40px;
+      right: 40px;
+      width: 80px;
+      height: auto;
+      z-index: 10000;
+      cursor: pointer;
+      background: none;
+      box-shadow: none;
+      filter: none;
+      display: block;
+      pointer-events: auto;
+    }
   </style>
 </head>
 <body>
@@ -75,5 +89,7 @@
       <img src="red-arrow-png-10.png" alt="Red Arrow" class="center-arrow" />
     </a>
   </div>
+  <!-- New arrow in the bottom right corner (no link by default) -->
+  <img src="red-arrow-png-10.png" alt="Corner Red Arrow" class="corner-arrow" />
 </body>
 </html>
