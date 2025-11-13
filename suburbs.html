@@ -11,21 +11,30 @@
       padding: 0;
       width: 100vw;
       height: 100vh;
-      background: #fafafa;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      overflow: hidden;
+      background: #000;
     }
-    h1 {
-      font-size: 7vw;
-      color: #333;
+    body {
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+    }
+    .suburbs-img {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      display: block;
       margin: 0;
-      font-family: Arial, sans-serif;
-      letter-spacing: 0.15em;
+      padding: 0;
+      border: none;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 0;
     }
   </style>
 </head>
 <body>
-  <h1>temp</h1>
+  <img src="nh.png" alt="Suburb Image" class="suburbs-img" />
 </body>
 </html>
