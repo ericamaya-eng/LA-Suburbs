@@ -36,8 +36,8 @@
       position: fixed;
       top: 50%;
       left: 50%;
-      /* Nudge slightly up (by 20px) and to the right (by 20px) from center */
-      transform: translate(calc(-50% + 20px), calc(-50% - 20px));
+      /* Center, then nudge up and right */
+      transform: translate(-50%, -50%) translate(16px, -16px);
       z-index: 9999;
       width: 80px;
       height: auto;
