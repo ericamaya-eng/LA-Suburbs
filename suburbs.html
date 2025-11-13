@@ -34,16 +34,19 @@
     }
     .center-arrow {
       position: fixed;
-      top: calc(50% - 40px);   /* Moves up by 40px */
-      left: calc(50% + 40px);  /* Moves right by 40px */
+      /* Moves up by 1 inch (96px), right by 1cm (about 37.8px) */
+      top: calc(50% - 96px);
+      left: calc(50% + 37.8px);
       transform: translate(-50%, -50%);
       z-index: 9999;
       width: 80px;
       height: auto;
       pointer-events: none;
       display: block;
-      /* Removed box-shadow */
-      filter: drop-shadow(0 0 6px rgba(0,0,0,0.5)); /* Soft edge only */
+      /* No box-shadow, no filter for total clarity */
+      box-shadow: none;
+      filter: none;
+      background: none;
     }
   </style>
 </head>
