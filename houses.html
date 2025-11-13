@@ -32,9 +32,37 @@
       top: 0;
       z-index: 0;
     }
+    .arrow-row {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      position: fixed;
+      top: 50%;
+      left: 0;
+      width: 100vw;
+      transform: translateY(-50%);
+      z-index: 9999;
+      pointer-events: none; /* Remove this if you want them to be clickable */
+    }
+    .center-arrow {
+      width: 80px;
+      height: auto;
+      display: block;
+      background: none;
+      box-shadow: none;
+      filter: none;
+      pointer-events: auto;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
   <img src="houses.png" alt="Houses Image" class="houses-img" />
+  <div class="arrow-row">
+    <img src="red-arrow-png-10.png" alt="Red Arrow" class="center-arrow" />
+    <img src="red-arrow-png-10.png" alt="Red Arrow" class="center-arrow" />
+    <img src="red-arrow-png-10.png" alt="Red Arrow" class="center-arrow" />
+    <img src="red-arrow-png-10.png" alt="Red Arrow" class="center-arrow" />
+  </div>
 </body>
 </html>
