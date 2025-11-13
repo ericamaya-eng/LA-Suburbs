@@ -36,9 +36,10 @@
       position: fixed;
       top: 50%;
       left: 50%;
-      /* Move UP 3in (-288px), RIGHT 2in (+192px), and DOWN 1in (+96px): net Y is -288px + 96px = -192px
-         So it becomes: UP 2in (-192px), RIGHT 2in (+192px) */
-      transform: translate(calc(-50% + 192px), calc(-50% - 192px));
+      /* Previously: UP 2in (-192px), RIGHT 2in (+192px)
+         Move DOWN 1in (+96px): net Y is -192px + 96px = -96px
+         So it becomes: UP 1in (-96px), RIGHT 2in (+192px) */
+      transform: translate(calc(-50% + 192px), calc(-50% - 96px));
       z-index: 9999;
       width: 80px;
       height: auto;
