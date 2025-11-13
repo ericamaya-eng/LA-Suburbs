@@ -34,16 +34,15 @@
     }
     .center-arrow {
       position: fixed;
-      /* Moves up by 1 inch (96px), right by 1cm (about 37.8px) */
-      top: calc(50% - 96px);
-      left: calc(50% + 37.8px);
-      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      /* Move up 1in (96px), right 1cm (37.8px) from center */
+      transform: translate(-50%, -50%) translate(-1in, 1cm);
       z-index: 9999;
       width: 80px;
       height: auto;
       pointer-events: none;
       display: block;
-      /* No box-shadow, no filter for total clarity */
       box-shadow: none;
       filter: none;
       background: none;
