@@ -33,17 +33,17 @@
       z-index: 0;
     }
     .center-arrow {
-      position: fixed; /* Use fixed to guarantee it's on top of all content */
-      top: 50%;
-      left: 50%;
+      position: fixed;
+      top: calc(50% - 40px);   /* Moves up by 40px */
+      left: calc(50% + 40px);  /* Moves right by 40px */
       transform: translate(-50%, -50%);
-      z-index: 9999;    /* Highest z-index to ensure visibility */
-      width: 80px;      /* Adjust size as needed */
+      z-index: 9999;
+      width: 80px;
       height: auto;
       pointer-events: none;
       display: block;
-      box-shadow: 0 0 10px 4px rgba(0,0,0,0.45); /* Optional: soft glow for visibility */
-      filter: drop-shadow(0 0 6px rgba(0,0,0,0.5)); /* Extra visibility */
+      box-shadow: 0 0 10px 4px rgba(0,0,0,0.45);
+      filter: drop-shadow(0 0 6px rgba(0,0,0,0.5));
     }
   </style>
 </head>
